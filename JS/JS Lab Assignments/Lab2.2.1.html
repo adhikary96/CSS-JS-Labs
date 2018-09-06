@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Compound interest calculation</title>
+        <script src="sum.js"></script>
+    </head>
+    <body>
+       <center>
+        <h1>Calculate Compound Interest</h1>
+        <form oninput="out.value=sum(parseInt(p.value),parseInt(n.value),parseInt(r.value))">
+           <table>
+               <tr>
+                   <td>Principal:</td>
+                   <td><input type="text" name="p"></input></td>
+               </tr>
+               <tr>
+                   <td>Time Period:</td>
+                   <td><input type="text" name="n"></input></td>
+               </tr>
+               <tr>
+                   <td>Rate of Interest (ROI):</td>
+                   <td><input type="text" name="r"></input></td>
+               </tr>
+               <tr>
+                   <td>Compound Interest:</td>
+                   <td><output name="out"></output></td>
+               </tr>
+           </table>
+        </form>
+    </center>
+    </body>
+</html>

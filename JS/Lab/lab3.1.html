@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Lab 3-1</title>
+		<script src="display.js" type="text/js"></script>
+	</head>
+	<body>
+		<script>
+			var d = new Date();
+			document.write(d);
+			document.write('<br/>');
+			
+			var hour = d.getHours();
+			document.write("hour:"+d.getHours());
+			document.write('<br/>');
+			
+			if(hour<12)
+				document.write("Good Morning!!");
+			else if(hour>=12 && hour<=17)
+				document.write("Good Afternoon!!");
+			else
+				document.write("Good Evening!!");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Functions</title>
+    <script>
+        function find(){
+            var str = document.getElementById("string").value;
+            var srch = document.getElementById("search").value;
+            var i = str.indexOf(srch);
+            
+            //document.write(i);
+            return i;
+        }
+    </script>
+</head>
+<body><center>
+    <h1>Find out the position of a character in the string</h1>
+    <form oninput="out.value=find()">
+            <table>
+                <tr>
+                        <td>The Actual String is :</td>
+                        <td><input type="text" id="string"/></td>
+                </tr>
+                <tr>
+                        <td>The Character to be searched is :</td>
+                        <td><input type="text" id="search"/></td>
+                </tr>
+                
+                <tr colspan="2">
+                        <td>The character is found at index: <output name="out"></output></td>
+                </tr>
+            </table>
+    </form>
+    </center>
+</body>
+</html>

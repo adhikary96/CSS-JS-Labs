@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<script >
+			function get(){
+					/*var name = document.getElementsByName("username");
+					for(var i=0; i<name.length; i++){
+						alert(name[i].value);
+					}*/
+					//var pwd = document.getElementById("pass").value;
+					//alert(name+" : "+pwd);
+					var name = document.getElementsByTagName("div");
+					for(var i=0; i<name.length; i++){
+						alert(name[i].innerHTML);
+					}
+				}
+		</script>
+	</head>
+	<title></title>
+	<body>
+		<script type="text/javascript">
+			function add(){
+				var name = document.getElementById("user").value;
+				var div = document.getElementById("d");
+				div.innerHTML = div.innerHTML + name + "<br/>";
+			}
+			
+			function display(){
+				
+			}
+			
+		</script><br/><br/>
+		Enter Data
+		<input type="text" id="user" name="username"/>
+		Enter pwd:<input type="password" id="pass" name="password"/>
+		
+		<br/><br/>
+		<input type="button" value="get" onclick="get()"/>
+		<br/><br/>
+		<input type="button" value="Add" onclick="add()"/>
+		<input type="button" value="Clear" onclick="clr()"/>
+		
+		<div id="d"></div>
+		
+	</body>
+
+</html>

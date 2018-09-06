@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<title>Form Validation</title>
+	<script src="compute.js"></script>
+</head>
+	<body>
+		<form method="post" action="compute.js">
+			<table>
+				<tr colspan="2">
+					<th><h2>Enter Loan Information:</h2></th>
+				</tr>
+				<tr>
+					<td>1) Amount of the loan (any currency):</td>
+					<td><input type="number"  min='0' max='1500000' pattern="\d{10}" title="Alphabets are not allowed" id="amt"></input></td>
+				</tr>
+				<tr>
+					<td>2) Annual percentage rate of interest:</td>
+					<td><input type="number" min='0' max='100' id="roi"></input></td>
+				</tr>
+				<tr>
+					<td>3) Repayment period in years:</td>
+					<td><input type="number" min='7' max='15' id="yrs" title="Alphabets are not allowed"></input></td>
+				</tr>
+				<tr>
+					<td><input type="button" onclick="compute()" value="Compute"/></td>
+				</tr>
+				<!------------------------------------------------>
+				<tr colspan="2">
+					<th><h2>Payment Information:</h2></th>
+				</tr>
+				<tr>
+					<td>4) Your monthly payment will be:</td>
+					<td><input type="number" id="amt" disabled></input></td>
+				</tr>
+				<tr>
+					<td>5) Your total payment will be:</td>
+					<td><input type="number" id="roi" disabled></input></td>
+				</tr>
+				<tr>
+					<td>6) Your total Rate of interest will be:</td>
+					<td><input type="number" id="yrs" disabled></input></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

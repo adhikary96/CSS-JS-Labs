@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Working with Windows</title>
+		<script>
+			function newWindow(){
+				var w = parseInt(document.getElementById("width").value);
+				var h = parseInt(document.getElementById("height").value);
+				console.log(w+ "      "+h);
+				newWin = window.open("","My Window","width=w, height=h");
+			}
+		</script>
+	</head>
+	<body>
+		<form><center>
+			<table border="1px">
+				<tr colspan="4"><th>Create a new window</th></tr>
+				<tr colspan="4"><td>Window size</td></tr>
+				<tr>
+					<td>Width:</td>
+					<td><input type="text" id="width"/></td>
+					<td>Height:</td>
+					<td><input type="text" id="height"/></td>
+				</tr>
+				<tr><td>POSITION</td></tr>
+				<tr>
+					<td>Left:</td>
+					<td><input type="text" id="left"/></td>
+					<td>Right:</td>
+					<td><input type="text" id="right"/></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="button" value="New Window" onclick="newWindow()"/></td>
+					<td><button type="reset"/>Reset</td>
+				</tr>
+			</table>
+		</center></form>
+	</body>
+</html>

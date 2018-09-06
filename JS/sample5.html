@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="function.js"></script>
+	</head>
+	<body>
+		<script>
+			var arr = new Array();
+			
+			arr[0] = "Bobby";
+			arr[1] = 10;
+			arr[2] = new Date();
+			
+			console.log('--------------------');
+			for(var i=0; i<arr.length; i++){
+				document.write(arr[i]);
+				console.log(arr[i]);
+				document.write('<br/>');
+			}
+			document.write('<br/>')
+			console.log('--------------------');
+			var brr = new Array("Bangalore", "Chennai","Hyderabad", "Pune");
+			for(var i=0; i<brr.length; i++){
+				document.write(brr[i]);
+				console.log(brr[i]);
+				document.write('<br/>');
+			}
+			document.write('<br/>');
+			console.log('--------------------');				
+			var crr=["bangalore", "chennai", "mumbai"];
+			for(var i=0; i<crr.length; i++){
+				document.write(crr[i]);
+				console.log(crr[i]);
+				document.write('<br/>');
+			}
+			document.write('<br/>');
+			document.write(arr);
+			
+			document.write('<br/>');
+			var res = arr.join(" -:- ");
+			document.write(res);
+			
+			document.write('<br/>');
+			document.write(brr.reverse());
+			
+			document.write('<br/><br/>');
+			document.write(brr);
+			
+			var ary=["hyderabad","pune","kolkata","agartala","cochin","delhi"];
+			
+			document.write('<br/><br/>');
+			document.write(ary.sort());
+			
+			var a=[9,5,7,10,2,48,6,8,4,5,1];
+			
+			document.write('<br/><br/>');
+			document.write(a.sort(function(a,b){return a-b;}));
+			
+			arr.name="Raja";
+			document.write('<br/><br/>');
+			document.write(arr.name);
+			
+			
+		</script>
+		
+	</body>
+</html>

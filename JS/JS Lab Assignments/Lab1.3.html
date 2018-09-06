@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Working with External JS file</title>
+        <script src="extJS.js"></script>
+        <script>
+            function dis(){
+                document.write("This text is displayed from the script tag embedded in the head tag of the document.")
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            dis();
+            document.write("<hr/><i>This text is displayed from the script tag embedded in the body tag of the document.</i>")
+        </script>
+        <script>
+            document.write('<div style="font-family: monospace; font-size:14px"><hr/>The actual script is in extrenal file called "extJS.js"</div>');
+            document.write('<div style="font-family: monospace; font-size:14px">This text is displayed by calling external function:<b> '+say()+"</b></div>");
+        </script>
+    </body>
+</html>

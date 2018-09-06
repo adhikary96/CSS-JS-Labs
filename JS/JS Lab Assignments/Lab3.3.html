@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Functions</title>
+    <script>
+        function find(){
+            var str = document.getElementById("string").value;
+            var srch = document.getElementById("search").value;
+            var i = str.indexOf(srch);
+            
+            //document.write(i);
+            return i;
+        }
+        function findMatch(){
+            var s1 = document.getElementById("match").value;
+            var stringE = document.getElementById("string").value;
+
+            //document.write(stringE.match(s1));
+            return stringE.match(s1);
+        }
+        function findSub(){
+            var stringE = document.getElementById("string").value;
+            var ll = document.getElementById("ll").value;
+            var ul = document.getElementById("ul").value;
+
+            return stringE.substr(ll,ul);
+        }
+    </script>
+</head>
+<body><center>
+    <h1>Exploring Other String Functions</h1>
+    <form oninput="mtch.value=findMatch(); subs.value=findSub(); ">
+            <table>
+                <tr>
+                        <td>The String is :<input type="text" id="string"/></td>
+                </tr>
+                
+                <tr>
+                    <td>Match with :<input type="text" id="match"/></td>
+                    <td>Result of str.match():<b/><output name="mtch" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        Substring from <input type="number" id="ll"> to <input type="number" id="ul">
+                    </td>
+                    <td>Result of str.match():<b/><output name="subs" /></td>
+                </tr>
+                <tr colspan="2" style="text-align: center">
+                    <td>Hello JavaScripters!!!</td>
+                </tr>
+            </table>
+    </form>
+    </center>
+</body>
+</html>

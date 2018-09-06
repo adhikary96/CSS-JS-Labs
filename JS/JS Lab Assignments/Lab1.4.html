@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Working with External JS file</title>
+        <script src="ext.js"></script>
+        <script>
+            function dis(){
+                var headVar = 10;
+                document.write("Script embedded in Head tag<br>------------------------------------------<br/>");
+                document.write("Variable stored in headVar is "+headVar);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            dis();
+            var bodyVar=65;
+            document.write("<hr/>Script embedded in Body tag<br>------------------------------------------<br/>")
+            document.write("Variable stored in headVar is "+bodyVar)
+        </script>
+        <script>
+            var headVar=10;
+            var bodyVar=65;
+            document.write('<hr/>The actual script is in extrenal file called "ext.js"');
+            document.write('<br>The Sum of headVar and bodyVar is '+sum(10, 65));
+        </script>
+    </body>
+</html>

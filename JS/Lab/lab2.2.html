@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<title>CI Layout</title>
+		<script src="CI.js"></script>
+		
+	</head>
+	<body><center>
+		<hr/>
+		CALCULATE COMPOUND INTEREST
+		<hr/>
+		<table>
+			<tr>
+				<td>Enter Principal:</td>
+				<td><input type="text" id="P"/> Rs.</td>
+			</tr>
+			<tr>
+				<td>Enter No. of Years:</td>
+				<td><input type="text" id="N"/>Yrs.</td>
+			</tr>
+			<tr>
+				<td>Enter Rate of Interest (ROI):</td>
+				<td><input type="text" id="R"/>%</td>
+			</tr>
+			<tr colspan="2">
+				<td><button onClick="calcCI(P.value, N.value, R.value)" id="button">Calculate CI</button></td>
+			</tr>			
+		</table>
+	</center></body>
+</html>

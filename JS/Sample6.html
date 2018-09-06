@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<center>
+	<head>
+		<script src="function.js"></script>
+			<!-- /*function f(){
+				var res = document.forms[0].user.value;
+				//var res = document.form1.user.value;
+				alert(res);
+				var r = confirm("Do you want to continue?");
+				alert(r);
+			}
+			
+			function f1(){
+				var res = document.forms[1].user.value;
+				//var res = document.form2.user.value;
+				alert(res);
+				window.alert(res+" Again with Window Obj");
+			}*/ -->
+		<script>
+				function winOpen(){
+					newWin = window.open("","My Window","width=500, height=200");
+				}
+				function winMove(){
+					newWin.moveBy(10,10);
+				}
+				function setTime(){
+					id = window.setInterval(testFun,1000);
+				}
+				function clearT(){
+					clearInterval(id)
+				}
+		</script>
+	</head>
+	<body>
+	
+		<script>
+			document.write("<h1>HELLO</h1>");
+			function test(){
+				document.bgColor="beige";
+			}
+			function test1(){
+				document.fgColor = "red";
+				
+			}
+		</script>
+	</body>
+	<!--<form name="form1">
+		UserName:<input type="text" name="user"/>
+	</form>
+	<br/><hr/><br/>
+	<form name="form2">
+		User:<input type="text" name="user"/>
+	</form> -->
+	<br/><br/>
+	<input type="button" value="Open Window" onclick="winOpen()"/>
+	<input type="button" value="Move window" onclick="winMove()"/>
+	
+	<br/><br/>
+	<input type="button" value="set timeout" onclick="setTime()"/>
+	<input type="button" value="clear timeout" onclick="clearT()"/>
+	
+	<br/><br/>
+	<input type="button" value="bg color" onclick="test()"/>
+	<input type="button" value="fg color" onclick="test1()"/>
+	
+</html>

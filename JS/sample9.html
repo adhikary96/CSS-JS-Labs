@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<script ></script>
+	</head>
+	<title>Working with JS</title>
+	<body>
+		<script type="text/javascript">
+			function test(){
+				var name = document.getElementsByName("city")[0].value;
+				/*name.focus();
+				name.select();*/
+				
+				alert(name);
+				
+			}
+		</script>
+		
+		<br/><br/>
+		<input type="button" value="Check" onclick=""/>
+		
+		<br/><br/>
+		<input type="text" id="city"  name="city" onChange="test()"/> 
+		<input type="text" id="State"  name="state"/>
+		
+		
+	</body>
+</html>

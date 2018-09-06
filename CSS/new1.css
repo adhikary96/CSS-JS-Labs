@@ -1,0 +1,29 @@
+body{
+	background-image:url("jellyfish.jpg");
+	background-repeat:repeat;
+	
+}
+
+h1{
+	color:Red;
+}
+
+div{
+	width:300px;
+	height:300px;
+	border:3px white;
+	border-radius:5%;
+	padding:20px;
+	background-image:url("image.jpg");
+	background-repeat:no-repeat;
+	background-origin:padding-box;
+}
+div:hover{
+	box-shadow:10px -10px 30px white;
+	
+	border-top:dashed;
+	border-bottom:dashed;
+	border-right:solid;
+	border-left:solid;
+	
+}

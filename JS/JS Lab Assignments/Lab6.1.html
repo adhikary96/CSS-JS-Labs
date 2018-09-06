@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Product Order</title>
+		<script src="ouder.js"></script>
+	</head>
+	<body>
+		<h2>PRODUCTS</h2>
+		<form target="invoice.html" method="post">
+			<table border="1px">
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Price</th>
+				<th>Qty</th>
+			</tr>
+			<tr>
+				<td>Barbie Doll</td>
+				<td>Beautiful</td>
+				<td>20</td>
+				<td><input type="text" id="doll"/></td>
+			</tr>
+			<tr>
+				<td>Calculator</td>
+				<td>Calculator with latest Features</td>
+				<td>30</td>
+				<td><input type="text" id="calc"/></td>
+			</tr>
+			<tr>
+				<td>Mobile Phone</td>
+				<td>Camera, Java, Games, GPRS</td>
+				<td>40</td>
+				<td><input type="text" id="phone"/></td>
+			</tr>
+			<tr>
+				<td>LG DVD</td>
+				<td>5 disc changer</td>
+				<td>50</td>
+				<td><input type="text" id="lg"/></td>
+			</tr>
+		</table>
+		<input type="button" onclick="order()" value="ORDER"></input>
+		</form>
+	</body>
+</html>

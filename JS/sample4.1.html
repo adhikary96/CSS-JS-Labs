@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="function.js"></script>
+	</head>
+	<body>
+		<script>
+			var str="Hello World";
+			document.write(str.bold());
+			document.write('<br/>');
+			
+			document.write(str.italics());
+			document.write('<br/>');
+			
+			document.write(str.bold().italics());
+			document.write('<br/>');
+			
+			document.write(str.fontcolor("red").bold().italics());
+			document.write('<br/>');
+			
+			document.write(str.fontcolor("red").bold().italics().fontsize(7));
+			document.write('<br/>');
+			
+			document.write(str.big());
+			document.write('<br/>');
+			
+			document.write(str.small());
+			document.write('<br/>');
+			
+		</script>
+		<br/><br/><button onclick="f1(10,'abc')">Click Me</button>
+	</body>
+</html>
